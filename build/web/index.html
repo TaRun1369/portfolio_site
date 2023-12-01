@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8"/>
+    <title>Tarun Santani</title>
+    <meta name="description"
+          content="Hello there, I'm Tarun Santani. This is my personal website, which contains public information that anyone can find on the internet."/>
+    <link rel="manifest" href="manifest.json"/>
+
+    <!-- Browser meta tags & icons -->
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content="Tarun Santani"/>
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png"/>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico" sizes="any"/>
+
+
+    <script>
+      // The value below is injected by flutter build, do not touch.
+      const serviceWorkerVersion = "1835623718";
+    </script>
+    <!-- This script adds the flutter initialization JS code -->
+    <script src="flutter.js" defer=""></script>
+    <link rel="stylesheet" type="text/css" href="splash/style.css"/>
+    <script src="splash/splash.js"></script>
+</head>
+
+<body>
+<picture id="splash">
+    <source srcset="splash/img/ono.gif 1x, splash/img/ono.gif 2x, splash/img/ono.gif 3x, splash/img/ono.gif 4x"
+            media="(prefers-color-scheme: light)"/>
+    <source
+            srcset="
+          splash/img/ono.gif 1x,
+          splash/img/ono.gif 2x,
+          splash/img/ono.gif 3x,
+          splash/img/ono.gif 4x
+        "
+            media="(prefers-color-scheme: dark)"
+    />
+    <img
+            class="center"
+            aria-hidden="true"
+            src="splash/img/ono.gif"
+            alt=""
+    />
+</picture>
+
+<script>
+      window.addEventListener("load", function (ev) {
+        // Download main.dart.js
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: function (engineInitializer) {
+            engineInitializer.initializeEngine().then(function (appRunner) {
+              appRunner.runApp();
+            });
+          },
+        });
+      });
+</script>
+</body>
+
+</html>
