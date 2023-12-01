@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.dileepabandara.dileepabandara_dev">
+    package="dev.TaRun1369.TaRun1369_dev">
    <application
-        android:label="dileepabandara_dev"
+        android:label="TaRun1369_dev"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
